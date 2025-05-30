@@ -6,13 +6,23 @@
 //
 
 import SwiftUI
+import Firebase
 
 @available(iOS 15.0, *)
 @main
 struct LoginViewApp: App {
+    @StateObject var authManager = AuthManager()
+    
     var body: some Scene {
         WindowGroup {
-            MyApp()
+            NavigationView {
+                if #available(iOS 14.0, *) {
+                    ContentView()
+                        .environmentObject(AuthManager())
+                } else {
+                    Text("Requires iOS 14 or later")
+                }
+            }
         }
     }
 }
