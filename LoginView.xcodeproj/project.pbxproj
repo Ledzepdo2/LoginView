@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E5DAACD22DEA3EAF006249A1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E5DAACD12DEA3EAF006249A1 /* FirebaseAuth */; };
+		E5DAACD42DEA3EAF006249A1 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E5DAACD32DEA3EAF006249A1 /* FirebaseAuthCombine-Community */; };
+		E5DAACD62DEA3EAF006249A1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E5DAACD52DEA3EAF006249A1 /* FirebaseFirestore */; };
+		E5DAACD82DEA3EAF006249A1 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E5DAACD72DEA3EAF006249A1 /* FirebaseFirestoreCombine-Community */; };
+		E5DAACDA2DEA3EAF006249A1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E5DAACD92DEA3EAF006249A1 /* FirebaseStorage */; };
+		E5DAACDC2DEA3EAF006249A1 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E5DAACDB2DEA3EAF006249A1 /* FirebaseStorageCombine-Community */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E5DAACA82DEA38AD006249A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +38,94 @@
 		E5DAACB12DEA38AD006249A1 /* LoginViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E5E0D6852DEA51D8008DBAA2 /* Exceptions for "LoginView" folder in "LoginViewTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Constants.swift,
+				Data/DataSources/ConversationDTO.swift,
+				Data/DataSources/FirestoreAuthDataSource.swift,
+				Data/DataSources/FirestoreConversationDataSource.swift,
+				Data/DataSources/FirestoreMessageDataSource.swift,
+				Data/DataSources/FirestoreUserDataSource.swift,
+				Data/DataSources/MessageDTO.swift,
+				Data/Repositories/AuthRepositoryProtocol.swift,
+				Data/Repositories/ConversationRepositoryProtocol.swift,
+				Data/Repositories/FirestoreAuthRepository.swift,
+				Data/Repositories/FirestoreConversationRepository.swift,
+				Data/Repositories/FirestoreMessageRepository.swift,
+				Data/Repositories/FirestoreUserRepository.swift,
+				Data/Repositories/MessageRepositoryProtocol.swift,
+				Data/Repositories/UserRepositoryProtocol.swift,
+				Domain/UseCases/FetchConversationsUseCase.swift,
+				Domain/UseCases/FetchMessagesUseCase.swift,
+				Domain/UseCases/LoginUseCase.swift,
+				Domain/UseCases/SendMessageUseCase.swift,
+				Domain/UseCases/UpdateProfileUseCase.swift,
+				FirebaseConfig.swift,
+				"GoogleService-Info.plist",
+				LoginViewApp.swift,
+				Presentation/ViewModels/AuthManager.swift,
+				Presentation/ViewModels/ConversationsViewModel.swift,
+				Presentation/ViewModels/LoginViewModel.swift,
+				Presentation/ViewModels/MessagesViewModel.swift,
+				Presentation/ViewModels/ProfileViewModel.swift,
+				Presentation/Views/ContentView.swift,
+				Presentation/Views/ConversationDetailView.swift,
+				Presentation/Views/ConversationsListView.swift,
+				Presentation/Views/LoginView.swift,
+				Presentation/Views/ProfileView.swift,
+			);
+			target = E5DAACA62DEA38AD006249A1 /* LoginViewTests */;
+		};
+		E5E0D6862DEA51D8008DBAA2 /* Exceptions for "LoginView" folder in "LoginViewUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Constants.swift,
+				Data/DataSources/ConversationDTO.swift,
+				Data/DataSources/FirestoreAuthDataSource.swift,
+				Data/DataSources/FirestoreConversationDataSource.swift,
+				Data/DataSources/FirestoreMessageDataSource.swift,
+				Data/DataSources/FirestoreUserDataSource.swift,
+				Data/DataSources/MessageDTO.swift,
+				Data/Repositories/AuthRepositoryProtocol.swift,
+				Data/Repositories/ConversationRepositoryProtocol.swift,
+				Data/Repositories/FirestoreAuthRepository.swift,
+				Data/Repositories/FirestoreConversationRepository.swift,
+				Data/Repositories/FirestoreMessageRepository.swift,
+				Data/Repositories/FirestoreUserRepository.swift,
+				Data/Repositories/MessageRepositoryProtocol.swift,
+				Data/Repositories/UserRepositoryProtocol.swift,
+				Domain/UseCases/FetchConversationsUseCase.swift,
+				Domain/UseCases/FetchMessagesUseCase.swift,
+				Domain/UseCases/LoginUseCase.swift,
+				Domain/UseCases/SendMessageUseCase.swift,
+				Domain/UseCases/UpdateProfileUseCase.swift,
+				FirebaseConfig.swift,
+				"GoogleService-Info.plist",
+				LoginViewApp.swift,
+				Presentation/ViewModels/AuthManager.swift,
+				Presentation/ViewModels/ConversationsViewModel.swift,
+				Presentation/ViewModels/LoginViewModel.swift,
+				Presentation/ViewModels/MessagesViewModel.swift,
+				Presentation/ViewModels/ProfileViewModel.swift,
+				Presentation/Views/ContentView.swift,
+				Presentation/Views/ConversationDetailView.swift,
+				Presentation/Views/ConversationsListView.swift,
+				Presentation/Views/LoginView.swift,
+				Presentation/Views/ProfileView.swift,
+			);
+			target = E5DAACB02DEA38AD006249A1 /* LoginViewUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E5DAAC9C2DEA38AC006249A1 /* LoginView */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E5E0D6852DEA51D8008DBAA2 /* Exceptions for "LoginView" folder in "LoginViewTests" target */,
+				E5E0D6862DEA51D8008DBAA2 /* Exceptions for "LoginView" folder in "LoginViewUITests" target */,
+			);
 			path = LoginView;
 			sourceTree = "<group>";
 		};
@@ -52,6 +146,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5DAACD22DEA3EAF006249A1 /* FirebaseAuth in Frameworks */,
+				E5DAACD82DEA3EAF006249A1 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				E5DAACD42DEA3EAF006249A1 /* FirebaseAuthCombine-Community in Frameworks */,
+				E5DAACDA2DEA3EAF006249A1 /* FirebaseStorage in Frameworks */,
+				E5DAACDC2DEA3EAF006249A1 /* FirebaseStorageCombine-Community in Frameworks */,
+				E5DAACD62DEA3EAF006249A1 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +212,12 @@
 			);
 			name = LoginView;
 			packageProductDependencies = (
+				E5DAACD12DEA3EAF006249A1 /* FirebaseAuth */,
+				E5DAACD32DEA3EAF006249A1 /* FirebaseAuthCombine-Community */,
+				E5DAACD52DEA3EAF006249A1 /* FirebaseFirestore */,
+				E5DAACD72DEA3EAF006249A1 /* FirebaseFirestoreCombine-Community */,
+				E5DAACD92DEA3EAF006249A1 /* FirebaseStorage */,
+				E5DAACDB2DEA3EAF006249A1 /* FirebaseStorageCombine-Community */,
 			);
 			productName = LoginView;
 			productReference = E5DAAC9A2DEA38AC006249A1 /* LoginView.app */;
@@ -195,6 +301,9 @@
 			);
 			mainGroup = E5DAAC912DEA38AC006249A1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E5DAACD02DEA3EAF006249A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E5DAAC9B2DEA38AC006249A1 /* Products */;
 			projectDirPath = "";
@@ -405,12 +514,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = NA.LoginView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesus.LoginView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -433,12 +543,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = NA.LoginView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesus.LoginView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -558,6 +669,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E5DAACD02DEA3EAF006249A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E5DAACD12DEA3EAF006249A1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5DAACD02DEA3EAF006249A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E5DAACD32DEA3EAF006249A1 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5DAACD02DEA3EAF006249A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		E5DAACD52DEA3EAF006249A1 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5DAACD02DEA3EAF006249A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		E5DAACD72DEA3EAF006249A1 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5DAACD02DEA3EAF006249A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		E5DAACD92DEA3EAF006249A1 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5DAACD02DEA3EAF006249A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		E5DAACDB2DEA3EAF006249A1 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5DAACD02DEA3EAF006249A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E5DAAC922DEA38AC006249A1 /* Project object */;
 }
