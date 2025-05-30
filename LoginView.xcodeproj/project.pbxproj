@@ -43,7 +43,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Constants.swift,
-				ContentView.swift,
 				Data/DataSources/ConversationDTO.swift,
 				Data/DataSources/FirestoreAuthDataSource.swift,
 				Data/DataSources/FirestoreConversationDataSource.swift,
@@ -83,7 +82,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Constants.swift,
-				ContentView.swift,
 				Data/DataSources/ConversationDTO.swift,
 				Data/DataSources/FirestoreAuthDataSource.swift,
 				Data/DataSources/FirestoreConversationDataSource.swift,

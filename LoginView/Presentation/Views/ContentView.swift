@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 14.0, *)
 struct ContentView: View {
     @EnvironmentObject var authManager: AuthManager
     
@@ -10,9 +11,14 @@ struct ContentView: View {
                 updateProfileUseCase: UpdateProfileUseCase(
                     repository: FirestoreUserRepository()
                 )
-            ))
+            ), userId: authManager.currentUserId)
         } else {
-            LoginView(viewModel: LoginViewModel(authManager: authManager))
+            LoginView()
+                .environmentObject(LoginViewModel(
+                    loginUseCase: LoginUseCase(
+                        authRepository: FirestoreAuthRepository()
+                    )
+                ))
         }
     }
 }
