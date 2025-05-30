@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 14.0, *)
 struct ProfileView: View {
     @StateObject var viewModel: ProfileViewModel
     let userId: String

@@ -8,14 +8,14 @@
 import Foundation
 
 struct UpdateProfileUseCase {
-    private let repository: UserRepositoryProtocol
+    private let userRepository: UserRepositoryProtocol
 
     init(repository: UserRepositoryProtocol) {
-        self.repository = repository
+        self.userRepository = repository
     }
 
     func execute(user: User, completion: @escaping (Result<Void, Error>) -> Void) {
-        repository.updateUser(user) { result in
+        userRepository.updateUser(user) { result in
             completion(result)
         }
     }

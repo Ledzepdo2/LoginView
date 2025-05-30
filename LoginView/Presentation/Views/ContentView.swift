@@ -5,7 +5,12 @@ struct ContentView: View {
     
     var body: some View {
         if authManager.isLoggedIn {
-            ProfileView(viewModel: ProfileViewModel())
+            ProfileView(viewModel: ProfileViewModel(
+                userRepository: FirestoreUserRepository(),
+                updateProfileUseCase: UpdateProfileUseCase(
+                    repository: FirestoreUserRepository()
+                )
+            ))
         } else {
             LoginView(viewModel: LoginViewModel(authManager: authManager))
         }
