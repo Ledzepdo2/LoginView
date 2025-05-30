@@ -1,3 +1,10 @@
+//
+//  MessageDTO.swift
+//  MessageDTO
+//
+//  Created by Jesus Perez on 30/05/25.
+//
+
 import Foundation
 
 struct MessageDTO: Codable {

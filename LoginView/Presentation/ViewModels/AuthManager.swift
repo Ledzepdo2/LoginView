@@ -1,3 +1,10 @@
+//
+//  AuthManager.swift
+//  AuthManager
+//
+//  Created by Jesus Perez on 30/05/25.
+//
+
 import Foundation
 import Combine
 

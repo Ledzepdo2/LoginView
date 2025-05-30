@@ -14,6 +14,7 @@ final class LoginViewModel: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var errorMessage: String?
     @Published var isLoggedIn: Bool = false
+    @Published var successMessage: String?
 
     private let loginUseCase: LoginUseCase
 
@@ -28,6 +29,7 @@ final class LoginViewModel: ObservableObject {
         }
         isLoading = true
         errorMessage = nil
+        successMessage = nil
 
         loginUseCase.execute(username: username, password: password) { [weak self] result in
             DispatchQueue.main.async {
@@ -35,6 +37,7 @@ final class LoginViewModel: ObservableObject {
                 switch result {
                 case .success:
                     self?.isLoggedIn = true
+                    self?.successMessage = "¡Inicio de sesión exitoso!"
                 case .failure(let error):
                     self?.errorMessage = error.localizedDescription
                 }

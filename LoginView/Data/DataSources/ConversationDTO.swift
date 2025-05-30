@@ -1,3 +1,10 @@
+//
+//  AuthRepositoryProtocol.swift
+//  LoginView
+//
+//  Created by Jesus Perez on 30/05/25.
+//
+
 import FirebaseFirestore
 
 struct ConversationDTO: Codable {

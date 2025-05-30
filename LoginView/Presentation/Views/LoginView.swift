@@ -25,6 +25,11 @@ struct LoginView: View {
                     Text("Loading...")
                 }
             }
+            if let success = viewModel.successMessage {
+                Text(success)
+                    .foregroundColor(.green)
+                    .font(.body)
+            }
             if let error = viewModel.errorMessage {
                 Text(error)
                     .foregroundColor(.red)
