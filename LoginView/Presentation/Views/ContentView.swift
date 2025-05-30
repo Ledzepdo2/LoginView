@@ -1,10 +1,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var authManager: AuthManager
+    
     var body: some View {
-        Text("Welcome")
-            .navigationTitle("My App")
-            .modifier(UniversalBackButtonModifier())
+        if authManager.isLoggedIn {
+            ProfileView(viewModel: ProfileViewModel())
+        } else {
+            LoginView(viewModel: LoginViewModel(authManager: authManager))
+        }
     }
 }
 

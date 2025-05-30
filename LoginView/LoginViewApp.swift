@@ -15,12 +15,15 @@ struct LoginViewApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                if #available(iOS 14.0, *) {
+            if #available(iOS 16.0, *) {
+                NavigationStack {
                     ContentView()
-                        .environmentObject(AuthManager())
-                } else {
-                    Text("Requires iOS 14 or later")
+                        .environmentObject(authManager)
+                }
+            } else {
+                NavigationView {
+                    ContentView()
+                        .environmentObject(authManager)
                 }
             }
         }
