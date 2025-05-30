@@ -38,9 +38,96 @@
 		E5DAACB12DEA38AD006249A1 /* LoginViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E5E0D6852DEA51D8008DBAA2 /* Exceptions for "LoginView" folder in "LoginViewTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Constants.swift,
+				ContentView.swift,
+				Data/DataSources/ConversationDTO.swift,
+				Data/DataSources/FirestoreAuthDataSource.swift,
+				Data/DataSources/FirestoreConversationDataSource.swift,
+				Data/DataSources/FirestoreMessageDataSource.swift,
+				Data/DataSources/FirestoreUserDataSource.swift,
+				Data/DataSources/MessageDTO.swift,
+				Data/Repositories/AuthRepositoryProtocol.swift,
+				Data/Repositories/ConversationRepositoryProtocol.swift,
+				Data/Repositories/FirestoreAuthRepository.swift,
+				Data/Repositories/FirestoreConversationRepository.swift,
+				Data/Repositories/FirestoreMessageRepository.swift,
+				Data/Repositories/FirestoreUserRepository.swift,
+				Data/Repositories/MessageRepositoryProtocol.swift,
+				Data/Repositories/UserRepositoryProtocol.swift,
+				Domain/UseCases/FetchConversationsUseCase.swift,
+				Domain/UseCases/FetchMessagesUseCase.swift,
+				Domain/UseCases/LoginUseCase.swift,
+				Domain/UseCases/SendMessageUseCase.swift,
+				Domain/UseCases/UpdateProfileUseCase.swift,
+				FirebaseConfig.swift,
+				"GoogleService-Info.plist",
+				LoginViewApp.swift,
+				Presentation/ViewModels/AuthManager.swift,
+				Presentation/ViewModels/ConversationsViewModel.swift,
+				Presentation/ViewModels/LoginViewModel.swift,
+				Presentation/ViewModels/MessagesViewModel.swift,
+				Presentation/ViewModels/ProfileViewModel.swift,
+				Presentation/Views/ContentView.swift,
+				Presentation/Views/ConversationDetailView.swift,
+				Presentation/Views/ConversationsListView.swift,
+				Presentation/Views/LoginView.swift,
+				Presentation/Views/ProfileView.swift,
+			);
+			target = E5DAACA62DEA38AD006249A1 /* LoginViewTests */;
+		};
+		E5E0D6862DEA51D8008DBAA2 /* Exceptions for "LoginView" folder in "LoginViewUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Constants.swift,
+				ContentView.swift,
+				Data/DataSources/ConversationDTO.swift,
+				Data/DataSources/FirestoreAuthDataSource.swift,
+				Data/DataSources/FirestoreConversationDataSource.swift,
+				Data/DataSources/FirestoreMessageDataSource.swift,
+				Data/DataSources/FirestoreUserDataSource.swift,
+				Data/DataSources/MessageDTO.swift,
+				Data/Repositories/AuthRepositoryProtocol.swift,
+				Data/Repositories/ConversationRepositoryProtocol.swift,
+				Data/Repositories/FirestoreAuthRepository.swift,
+				Data/Repositories/FirestoreConversationRepository.swift,
+				Data/Repositories/FirestoreMessageRepository.swift,
+				Data/Repositories/FirestoreUserRepository.swift,
+				Data/Repositories/MessageRepositoryProtocol.swift,
+				Data/Repositories/UserRepositoryProtocol.swift,
+				Domain/UseCases/FetchConversationsUseCase.swift,
+				Domain/UseCases/FetchMessagesUseCase.swift,
+				Domain/UseCases/LoginUseCase.swift,
+				Domain/UseCases/SendMessageUseCase.swift,
+				Domain/UseCases/UpdateProfileUseCase.swift,
+				FirebaseConfig.swift,
+				"GoogleService-Info.plist",
+				LoginViewApp.swift,
+				Presentation/ViewModels/AuthManager.swift,
+				Presentation/ViewModels/ConversationsViewModel.swift,
+				Presentation/ViewModels/LoginViewModel.swift,
+				Presentation/ViewModels/MessagesViewModel.swift,
+				Presentation/ViewModels/ProfileViewModel.swift,
+				Presentation/Views/ContentView.swift,
+				Presentation/Views/ConversationDetailView.swift,
+				Presentation/Views/ConversationsListView.swift,
+				Presentation/Views/LoginView.swift,
+				Presentation/Views/ProfileView.swift,
+			);
+			target = E5DAACB02DEA38AD006249A1 /* LoginViewUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E5DAAC9C2DEA38AC006249A1 /* LoginView */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E5E0D6852DEA51D8008DBAA2 /* Exceptions for "LoginView" folder in "LoginViewTests" target */,
+				E5E0D6862DEA51D8008DBAA2 /* Exceptions for "LoginView" folder in "LoginViewUITests" target */,
+			);
 			path = LoginView;
 			sourceTree = "<group>";
 		};
@@ -435,7 +522,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = NA.LoginView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesus.LoginView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -464,7 +551,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = NA.LoginView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesus.LoginView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

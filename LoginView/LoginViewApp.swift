@@ -11,6 +11,11 @@ import Firebase
 @available(iOS 15.0, *)
 @main
 struct LoginViewApp: App {
+    
+    init() {
+            FirebaseConfig.setup()
+        }
+    
     @StateObject var authManager = AuthManager()
     
     var body: some Scene {
